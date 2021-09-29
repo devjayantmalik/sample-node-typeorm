@@ -1,0 +1,44 @@
+{
+  "name": "sample-node-typeorm",
+  "version": "1.0.0",
+  "description": "A simple typeorm configuration for NodeJS and TypeORM",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typeorm": "ts-node ./node_modules/.bin/typeorm -f ./src/db/ormconfig.ts",
+    "migration:generate": "yarn run typeorm migration:generate -n",
+    "migration:blank": "yarn run typeorm migration:create -n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjayantmalik/sample-node-typeorm.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jayant Malik",
+    "email": "prod.jayantmalik@gmail.com",
+    "url": "https://developbharat.com"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/devjayantmalik/sample-node-typeorm/issues"
+  },
+  "homepage": "https://github.com/devjayantmalik/sample-node-typeorm#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.4.3",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.37"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.10.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=14.x"
+  }
+}
