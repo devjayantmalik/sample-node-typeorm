@@ -28,7 +28,7 @@
   "homepage": "https://github.com/devjayantmalik/sample-node-typeorm#readme",
   "dependencies": {
     "better-sqlite3": "^7.4.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.37"
   },
